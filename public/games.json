@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "snapshot_version": 1,
-  "generated_at": "2026-07-16T22:18:38Z",
+  "snapshot_version": 2,
+  "generated_at": "2026-07-16T23:32:22Z",
   "identity": {
     "steam_id": "76561197970928054",
     "itad_user": "arcca"
@@ -16,14 +16,14 @@
     },
     "itad_collection": {
       "status": "ok",
-      "fetched_at": "2026-07-16T22:18:38Z",
+      "fetched_at": "2026-07-16T23:32:22Z",
       "count": 108,
       "via": "json-api",
       "error": null
     },
     "itad_waitlist": {
       "status": "ok",
-      "fetched_at": "2026-07-16T22:18:38Z",
+      "fetched_at": "2026-07-16T23:32:22Z",
       "count": 9,
       "via": "json-api",
       "error": null
