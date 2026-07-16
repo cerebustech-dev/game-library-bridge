@@ -116,6 +116,24 @@ def test_dry_run_writes_nothing(tmp_path, fixture_text, fixture_json):
 
 
 @responses.activate
+def test_dry_run_reports_guard_rejection_without_writing(tmp_path, fixture_text, fixture_json):
+    mock_happy_path(responses, fixture_text, fixture_json)
+    out = tmp_path / "games.json"
+    assert run(["--output", str(out)]) == 0
+    before = out.read_text(encoding="utf-8")
+
+    responses.get(OWNED_GAMES_URL, json={"response": {"game_count": 0, "games": []}})
+    responses.get(f"{BASE_URL}/uid/arcca/collection/", body=fixture_text("itad_page.html"))
+    responses.post(f"{BASE_URL}{COLLECTION_API}", json=[])
+    responses.post(f"{BASE_URL}{WAITLIST_API}", json={"hasNext": False, "games": {}})
+
+    assert run(["--output", str(out), "--dry-run"]) == 2
+
+    assert out.read_text(encoding="utf-8") == before
+    assert not (tmp_path / "games.rejected.json").exists()
+
+
+@responses.activate
 def test_missing_steam_key_is_skipped_not_fatal(tmp_path, monkeypatch, fixture_text, fixture_json):
     monkeypatch.delenv("STEAM_API_KEY")
     responses.get(f"{BASE_URL}/uid/arcca/collection/", body=fixture_text("itad_page.html"))

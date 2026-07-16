@@ -156,7 +156,10 @@ def run(argv: list[str] | None = None) -> int:
         allow_degraded=args.allow_degraded,
     )
     if reasons and not args.force:
-        write_rejected(output, candidate, reasons)
+        if args.dry_run:
+            log.error("dry run: guard would reject this snapshot", extra={"reasons": reasons})
+        else:
+            write_rejected(output, candidate, reasons)
         return 2
     if reasons:
         log.warning("guard overridden by --force", extra={"reasons": reasons})
