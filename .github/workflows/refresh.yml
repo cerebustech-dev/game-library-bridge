@@ -61,3 +61,25 @@ jobs:
           git add public/games.json
           git commit -m "chore: refresh games.json snapshot"
           git push
+
+      # Deploy from here rather than relying on the commit above to trigger
+      # pages.yml: pushes made with the default GITHUB_TOKEN deliberately do
+      # not trigger other workflows.
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  deploy:
+    needs: refresh
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

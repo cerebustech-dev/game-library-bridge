@@ -54,12 +54,18 @@ that always serves the latest valid snapshot.
 ```
 cron (daily 05:17 UTC)
   └─ refresh.yml: fetch Steam + ITAD → merge → schema-validate → guard
-       ├─ guard OK & changed  → commit public/games.json → push to main
-       │     └─ pages.yml (paths: public/**) → deploy public/ to GitHub Pages
-       ├─ guard OK, unchanged → no commit, no deploy
-       └─ guard REJECTS       → job fails (exit 2), previous snapshot stays
+       ├─ guard OK  → commit public/games.json if changed → push to main
+       │              → deploy public/ to GitHub Pages (same workflow)
+       └─ guard REJECTS → job fails (exit 2), previous snapshot stays,
+                          nothing is deployed
              └─ games.rejected.json uploaded as a workflow artifact
 ```
+
+`refresh.yml` deploys Pages itself because commits pushed with the default
+`GITHUB_TOKEN` intentionally do **not** trigger other workflows — a
+`paths: public/**` push trigger alone would never fire for the bot's commits.
+`pages.yml` still covers the cases that do trigger on push: snapshots you
+commit yourself (e.g. the seed below) and manual `workflow_dispatch`.
 
 You can also trigger either workflow manually from the *Actions* tab
 (`workflow_dispatch`).
