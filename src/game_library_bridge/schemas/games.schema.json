@@ -26,6 +26,21 @@
     "generated_at": {
       "$ref": "#/$defs/utcTimestamp"
     },
+    "content_hash": {
+      "$comment": "Always emitted since schema 1.1.0; optional so 1.0.0 snapshots still validate. sha256 over canonical {identity, owned, waitlisted} — changes iff the library content changes.",
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$"
+    },
+    "owned_count": {
+      "$comment": "Always emitted since schema 1.1.0. Equals owned.length.",
+      "type": "integer",
+      "minimum": 0
+    },
+    "waitlisted_count": {
+      "$comment": "Always emitted since schema 1.1.0. Equals waitlisted.length.",
+      "type": "integer",
+      "minimum": 0
+    },
     "identity": {
       "type": "object",
       "additionalProperties": false,

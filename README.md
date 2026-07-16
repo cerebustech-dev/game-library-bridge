@@ -65,10 +65,15 @@ JSON Schema 2020-12). Top-level shape:
 
 ```jsonc
 {
-  "schema_version": "1.0.0",     // document format version (semver)
+  "schema_version": "1.1.0",     // document format version (semver)
   "snapshot_version": 42,        // monotonically increasing per successful write
   "generated_at": "2026-07-16T05:17:03Z",
+  "content_hash": "sha256:9f2c...",  // stable hash of {identity, owned, waitlisted}:
+                                     // changes iff the library content changes,
+                                     // never from timestamps/provenance/warnings
   "identity": { "steam_id": "76561197970928054", "itad_user": "arcca" },
+  "owned_count": 121,            // == owned.length
+  "waitlisted_count": 9,         // == waitlisted.length
   "sources": {                   // per-source provenance
     "steam":           { "status": "ok", "fetched_at": "...", "count": 300, "via": "steam-web-api", "error": null },
     "itad_collection": { "status": "ok", "fetched_at": "...", "count": 108, "via": "json-api", "error": null },

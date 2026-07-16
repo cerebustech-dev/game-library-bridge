@@ -77,7 +77,9 @@ curl -s https://<username>.github.io/game-library-bridge/games.json | jq '.owned
 ```
 
 Consumers should pin on `schema_version` (semver of the document format) and
-can use `snapshot_version` / `generated_at` to detect updates. GitHub Pages
+can use `snapshot_version` / `generated_at` to detect a new publish, or
+`content_hash` to detect that the *library data itself* changed (it ignores
+run metadata like timestamps and provenance). GitHub Pages
 sends sensible caching headers (`max-age=600`), so clients see updates within
 minutes of a deploy.
 

@@ -5,6 +5,7 @@ from __future__ import annotations
 import logging
 
 from . import SCHEMA_VERSION
+from .snapshot import compute_content_hash
 from .models import (
     SOURCE_ITAD_COLLECTION,
     SOURCE_ITAD_WAITLIST,
@@ -117,16 +118,20 @@ def build_snapshot(
         "schema_version": SCHEMA_VERSION,
         "snapshot_version": (previous or {}).get("snapshot_version", 0) + 1,
         "generated_at": generated_at or utc_now_iso(),
+        "content_hash": None,  # filled below, once the hashed fields exist
         "identity": {"steam_id": steam_id, "itad_user": itad_user},
         "sources": {
             SOURCE_STEAM: steam.provenance(),
             SOURCE_ITAD_COLLECTION: itad_collection.provenance(),
             SOURCE_ITAD_WAITLIST: itad_waitlist.provenance(),
         },
+        "owned_count": len(owned),
+        "waitlisted_count": len(waitlisted),
         "owned": owned,
         "waitlisted": waitlisted,
         "warnings": warnings,
     }
+    snapshot["content_hash"] = compute_content_hash(snapshot)
     log.info(
         "snapshot built",
         extra={

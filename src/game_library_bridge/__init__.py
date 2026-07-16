@@ -4,4 +4,4 @@ __version__ = "0.1.0"
 
 # Version of the games.json document format. Bump the minor for additive
 # changes, the major for breaking changes, and keep games.schema.json in sync.
-SCHEMA_VERSION = "1.0.0"
+SCHEMA_VERSION = "1.1.0"

@@ -7,6 +7,7 @@ empty or suspiciously incomplete data. A rejected candidate is written to
 
 from __future__ import annotations
 
+import hashlib
 import json
 import logging
 import math
@@ -18,6 +19,23 @@ from .models import STATUS_OK
 from .schema import SnapshotValidationError, validate_snapshot
 
 log = logging.getLogger("glb.snapshot")
+
+# Fields whose hash-relevant content is the library itself. Run metadata
+# (timestamps, snapshot_version, provenance, warnings) is deliberately
+# excluded so the hash changes iff the actual game data changes.
+_HASHED_FIELDS = ("identity", "owned", "waitlisted")
+
+
+def compute_content_hash(snapshot: dict) -> str:
+    """Stable sha256 over the library content (identity + owned + waitlisted).
+
+    Canonical serialization: sorted keys, compact separators, UTF-8. Two
+    snapshots of the same library produce the same hash regardless of when or
+    how they were fetched.
+    """
+    doc = {key: snapshot.get(key) for key in _HASHED_FIELDS}
+    canonical = json.dumps(doc, sort_keys=True, separators=(",", ":"), ensure_ascii=False)
+    return "sha256:" + hashlib.sha256(canonical.encode("utf-8")).hexdigest()
 
 
 def load_previous(path: Path) -> tuple[dict | None, list[str]]:
