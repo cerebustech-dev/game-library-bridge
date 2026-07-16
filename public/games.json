@@ -1,29 +1,29 @@
 {
   "schema_version": "1.0.0",
-  "snapshot_version": 2,
-  "generated_at": "2026-07-16T23:32:22Z",
+  "snapshot_version": 3,
+  "generated_at": "2026-07-16T23:34:17Z",
   "identity": {
     "steam_id": "76561197970928054",
     "itad_user": "arcca"
   },
   "sources": {
     "steam": {
-      "status": "skipped",
-      "fetched_at": null,
-      "count": null,
-      "via": null,
-      "error": "STEAM_API_KEY is not set (see .env.example)"
+      "status": "ok",
+      "fetched_at": "2026-07-16T23:34:16Z",
+      "count": 115,
+      "via": "steam-web-api",
+      "error": null
     },
     "itad_collection": {
       "status": "ok",
-      "fetched_at": "2026-07-16T23:32:22Z",
+      "fetched_at": "2026-07-16T23:34:17Z",
       "count": 108,
       "via": "json-api",
       "error": null
     },
     "itad_waitlist": {
       "status": "ok",
-      "fetched_at": "2026-07-16T23:32:22Z",
+      "fetched_at": "2026-07-16T23:34:17Z",
       "count": 9,
       "via": "json-api",
       "error": null
@@ -31,267 +31,325 @@
   },
   "owned": [
     {
+      "title": "3DMark Demo",
+      "normalized_title": "3dmark demo",
+      "steam_appid": 231350,
+      "itad_id": null,
+      "itad_slug": null,
+      "playtime_minutes": 15,
+      "added_at": null,
+      "sources": [
+        "steam"
+      ]
+    },
+    {
       "title": "Against the Storm",
       "normalized_title": "against the storm",
-      "steam_appid": null,
+      "steam_appid": 1336490,
       "itad_id": "018d937f-42c6-70a5-a29b-9d8c2e0f7b84",
       "itad_slug": "against-the-storm",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
-      "title": "Assassin's Creed® III Remastered",
+      "title": "Aperture Desk Job",
+      "normalized_title": "aperture desk job",
+      "steam_appid": 1902490,
+      "itad_id": null,
+      "itad_slug": null,
+      "playtime_minutes": 76,
+      "added_at": null,
+      "sources": [
+        "steam"
+      ]
+    },
+    {
+      "title": "Assassin's Creed III Remastered",
       "normalized_title": "assassin s creed iii remastered",
-      "steam_appid": null,
+      "steam_appid": 911400,
       "itad_id": "018d937f-2767-73fb-8a5f-3c25c3fd6789",
       "itad_slug": "assassins-creed-iii-remastered",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Assassin's Creed Odyssey",
       "normalized_title": "assassin s creed odyssey",
-      "steam_appid": null,
+      "steam_appid": 812140,
       "itad_id": "018d937f-0184-7248-8d64-3c723c523111",
       "itad_slug": "assassins-creed-odyssey",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Assassin's Creed Valhalla",
       "normalized_title": "assassin s creed valhalla",
-      "steam_appid": null,
+      "steam_appid": 2208920,
       "itad_id": "018d937f-4227-700c-9dbe-1190755ac02c",
       "itad_slug": "assassins-creed-valhalla",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Avowed",
       "normalized_title": "avowed",
-      "steam_appid": null,
+      "steam_appid": 2457220,
       "itad_id": "018d937f-6ee2-70f6-940c-6212b045c9c3",
       "itad_slug": "avowed",
       "playtime_minutes": 7,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Baldur's Gate 3",
       "normalized_title": "baldur s gate 3",
-      "steam_appid": null,
+      "steam_appid": 1086940,
       "itad_id": "018d9584-24d6-7010-b82b-df1f0b154cc7",
       "itad_slug": "baldurs-gate-3",
       "playtime_minutes": 14068,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Batman: The Enemy Within - The Telltale Series",
       "normalized_title": "batman the enemy within the telltale series",
-      "steam_appid": null,
+      "steam_appid": 675260,
       "itad_id": "018d937f-0818-728e-90f0-727cc70b0472",
       "itad_slug": "batman-the-enemy-within-the-telltale-series",
       "playtime_minutes": 582,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Batman - The Telltale Series",
       "normalized_title": "batman the telltale series",
-      "steam_appid": null,
+      "steam_appid": 498240,
       "itad_id": "018d937f-1993-732b-8d28-dd8fbd7739bf",
       "itad_slug": "batman-the-telltale-series",
       "playtime_minutes": 529,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "BioShock Infinite",
       "normalized_title": "bioshock infinite",
-      "steam_appid": null,
+      "steam_appid": 8870,
       "itad_id": "018d937e-f877-71b3-aba5-8ff11818cd0b",
       "itad_slug": "bioshock-infinite",
       "playtime_minutes": 3,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Black Mesa",
       "normalized_title": "black mesa",
-      "steam_appid": null,
+      "steam_appid": 362890,
       "itad_id": "018d937f-20eb-70ae-bb67-f6d04b00780d",
       "itad_slug": "black-mesa",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Braid",
       "normalized_title": "braid",
-      "steam_appid": null,
+      "steam_appid": 26800,
       "itad_id": "018d937f-0651-7276-9c5d-9628dcc6b352",
       "itad_slug": "braid",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Braid, Anniversary Edition",
       "normalized_title": "braid anniversary edition",
-      "steam_appid": null,
+      "steam_appid": 499180,
       "itad_id": "018f0689-4790-71fb-932a-950c05b00c6c",
       "itad_slug": "braid-anniversary-edition",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Cities: Skylines",
       "normalized_title": "cities skylines",
-      "steam_appid": null,
+      "steam_appid": 255710,
       "itad_id": "018d937e-ff65-73f8-8d14-410ce85fa304",
       "itad_slug": "cities-skylines",
       "playtime_minutes": 208,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Cities: Skylines II",
       "normalized_title": "cities skylines ii",
-      "steam_appid": null,
+      "steam_appid": 949230,
       "itad_id": "018d937f-6b8e-701a-8b52-fc6645051dd6",
       "itad_slug": "cities-skylines-ii",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Clair Obscur: Expedition 33",
       "normalized_title": "clair obscur expedition 33",
-      "steam_appid": null,
+      "steam_appid": 1903340,
       "itad_id": "018ffe0d-15a7-7247-bb3c-4e5e1980561f",
       "itad_slug": "clair-obscur-expedition-33",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Control Ultimate Edition",
       "normalized_title": "control ultimate edition",
-      "steam_appid": null,
+      "steam_appid": 870780,
       "itad_id": "018d937f-4614-7311-8f5e-54720a2e73c2",
       "itad_slug": "control-ultimate-edition",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Counter-Strike: Source",
       "normalized_title": "counter strike source",
-      "steam_appid": null,
+      "steam_appid": 240,
       "itad_id": "018d937f-1d0a-704b-ae79-598acc6c23c5",
       "itad_slug": "counter-strike-source",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Cyberpunk 2077",
       "normalized_title": "cyberpunk 2077",
-      "steam_appid": null,
+      "steam_appid": 1091500,
       "itad_id": "018d937f-2997-7131-b8b9-7c8af4825fa8",
       "itad_slug": "cyberpunk-2077",
       "playtime_minutes": 10779,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Daylight",
       "normalized_title": "daylight",
-      "steam_appid": null,
+      "steam_appid": 230840,
       "itad_id": "018d937f-07c2-7077-bebc-928c099df1a0",
       "itad_slug": "daylight",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Dead Cells",
       "normalized_title": "dead cells",
-      "steam_appid": null,
+      "steam_appid": 588650,
       "itad_id": "018d937f-2b4b-72f9-ab75-bc33784a295d",
       "itad_slug": "dead-cells",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Detroit: Become Human",
       "normalized_title": "detroit become human",
-      "steam_appid": null,
+      "steam_appid": 1222140,
       "itad_id": "018d937e-f0ad-7094-b86c-d8fb32a1e6b4",
       "itad_slug": "detroit-become-human",
       "playtime_minutes": 373,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
-      "title": "Deus Ex: Mankind Divided",
+      "title": "Deus Ex: Mankind Divided™",
       "normalized_title": "deus ex mankind divided",
-      "steam_appid": null,
+      "steam_appid": 337000,
       "itad_id": "018d937f-07c2-7077-bebc-928c09f137d8",
       "itad_slug": "deus-ex-mankind-divided",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
+      ]
+    },
+    {
+      "title": "Disco Elysium",
+      "normalized_title": "disco elysium",
+      "steam_appid": 632470,
+      "itad_id": null,
+      "itad_slug": null,
+      "playtime_minutes": 111,
+      "added_at": null,
+      "sources": [
+        "steam"
       ]
     },
     {
@@ -309,13 +367,26 @@
     {
       "title": "Dispatch",
       "normalized_title": "dispatch",
-      "steam_appid": null,
+      "steam_appid": 2592160,
       "itad_id": "0193be2a-b031-72c9-aa62-fc9842adf3e4",
       "itad_slug": "dispatch--1",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
+      ]
+    },
+    {
+      "title": "Divinity: Original Sin 2",
+      "normalized_title": "divinity original sin 2",
+      "steam_appid": 435150,
+      "itad_id": null,
+      "itad_slug": null,
+      "playtime_minutes": 343,
+      "added_at": null,
+      "sources": [
+        "steam"
       ]
     },
     {
@@ -333,408 +404,466 @@
     {
       "title": "DOOM",
       "normalized_title": "doom",
-      "steam_appid": null,
+      "steam_appid": 379720,
       "itad_id": "018d937e-fce8-716b-97f3-6a41f82bb9e7",
       "itad_slug": "doom",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "DOOM: The Dark Ages",
       "normalized_title": "doom the dark ages",
-      "steam_appid": null,
+      "steam_appid": 3017860,
       "itad_id": "018ffe30-0af1-701c-b71a-24ca5e3c0d05",
       "itad_slug": "doom-the-dark-ages",
       "playtime_minutes": 36,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
+      ]
+    },
+    {
+      "title": "Dota Underlords",
+      "normalized_title": "dota underlords",
+      "steam_appid": 1046930,
+      "itad_id": null,
+      "itad_slug": null,
+      "playtime_minutes": 153,
+      "added_at": null,
+      "sources": [
+        "steam"
       ]
     },
     {
       "title": "Dragon Age™: The Veilguard",
       "normalized_title": "dragon age the veilguard",
-      "steam_appid": null,
+      "steam_appid": 1845910,
       "itad_id": "018fee47-aed3-72de-8b98-d94181c6b394",
       "itad_slug": "dragon-age-the-veilguard",
       "playtime_minutes": 6,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
+      ]
+    },
+    {
+      "title": "Driver Booster 5 for Steam",
+      "normalized_title": "driver booster 5 for steam",
+      "steam_appid": 735360,
+      "itad_id": null,
+      "itad_slug": null,
+      "playtime_minutes": 64694,
+      "added_at": null,
+      "sources": [
+        "steam"
       ]
     },
     {
       "title": "Dyson Sphere Program",
       "normalized_title": "dyson sphere program",
-      "steam_appid": null,
+      "steam_appid": 1366540,
       "itad_id": "018d937f-47b2-7324-b65c-302455a73d60",
       "itad_slug": "dyson-sphere-program",
       "playtime_minutes": 55,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
-      "title": "Elden Ring",
+      "title": "ELDEN RING",
       "normalized_title": "elden ring",
-      "steam_appid": null,
+      "steam_appid": 1245620,
       "itad_id": "018d937f-590c-728b-ac35-38bcff85f086",
       "itad_slug": "elden-ring",
       "playtime_minutes": 108,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Elite Dangerous",
       "normalized_title": "elite dangerous",
-      "steam_appid": null,
+      "steam_appid": 359320,
       "itad_id": "018d937f-20dd-718c-b020-9b3b478a9a6c",
       "itad_slug": "elite-dangerous",
       "playtime_minutes": 11,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "EVERSPACE™ 2",
       "normalized_title": "everspace 2",
-      "steam_appid": null,
+      "steam_appid": 1128920,
       "itad_id": "018d937e-f4d3-7185-98f0-51883414ef27",
       "itad_slug": "everspace-2",
       "playtime_minutes": 17,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "FINAL FANTASY XIV Online",
       "normalized_title": "final fantasy xiv online",
-      "steam_appid": null,
+      "steam_appid": 39210,
       "itad_id": "018d937f-07e5-703c-bd73-80c94796424f",
       "itad_slug": "final-fantasy-xiv-online",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Frostpunk",
       "normalized_title": "frostpunk",
-      "steam_appid": null,
+      "steam_appid": 323190,
       "itad_id": "018d937f-1343-70f0-a3f7-3148e54c9557",
       "itad_slug": "frostpunk",
       "playtime_minutes": 523,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "FTL: Faster Than Light",
       "normalized_title": "ftl faster than light",
-      "steam_appid": null,
+      "steam_appid": 212680,
       "itad_id": "018d937f-03dc-72d0-8283-bdeb0e98ee8c",
       "itad_slug": "ftl-faster-than-light",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Game of Thrones - A Telltale Games Series",
       "normalized_title": "game of thrones a telltale games series",
-      "steam_appid": null,
+      "steam_appid": 330840,
       "itad_id": "018d937f-0399-7080-8597-46a0b7deef26",
       "itad_slug": "game-of-thrones-a-telltale-games-series",
       "playtime_minutes": 759,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Ghost of Tsushima DIRECTOR'S CUT",
       "normalized_title": "ghost of tsushima director s cut",
-      "steam_appid": null,
+      "steam_appid": 2215430,
       "itad_id": "018e147e-9b32-7025-90af-981a785efddf",
       "itad_slug": "ghost-of-tsushima-directors-cut",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "God of War",
       "normalized_title": "god of war",
-      "steam_appid": null,
+      "steam_appid": 1593500,
       "itad_id": "018d937f-4964-7357-a557-f04dac608915",
       "itad_slug": "god-of-war",
       "playtime_minutes": 92,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Gordian Quest",
       "normalized_title": "gordian quest",
-      "steam_appid": null,
+      "steam_appid": 981430,
       "itad_id": "018d937f-3a48-70b5-a889-444238b52c12",
       "itad_slug": "gordian-quest",
       "playtime_minutes": 49,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Hades",
       "normalized_title": "hades",
-      "steam_appid": null,
+      "steam_appid": 1145360,
       "itad_id": "018d937f-33f0-7200-80fc-87f769196c84",
       "itad_slug": "hades",
       "playtime_minutes": 28,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Hades II",
       "normalized_title": "hades ii",
-      "steam_appid": null,
+      "steam_appid": 1145350,
       "itad_id": "018d937f-6ee3-738a-b578-ddd7e9a0d24d",
       "itad_slug": "hades-ii",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Half-Life 2",
       "normalized_title": "half life 2",
-      "steam_appid": null,
+      "steam_appid": 220,
       "itad_id": "018d937f-012f-73b8-ab2c-898516969e6a",
       "itad_slug": "half-life-2",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Half-Life 2: Deathmatch",
       "normalized_title": "half life 2 deathmatch",
-      "steam_appid": null,
+      "steam_appid": 320,
       "itad_id": "018d937e-e9c1-71fc-9f4a-472d667bd661",
       "itad_slug": "half-life-2-deathmatch",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Half-Life Deathmatch: Source",
       "normalized_title": "half life deathmatch source",
-      "steam_appid": null,
+      "steam_appid": 360,
       "itad_id": "018d937f-0e87-7141-b3c6-3cdbe97a7dc0",
       "itad_slug": "half-life-deathmatch-source",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Halo: The Master Chief Collection",
       "normalized_title": "halo the master chief collection",
-      "steam_appid": null,
+      "steam_appid": 976730,
       "itad_id": "018d937f-1155-7183-9b7b-f4f3f65b7b11",
       "itad_slug": "halo-the-master-chief-collection",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Hardspace: Shipbreaker",
       "normalized_title": "hardspace shipbreaker",
-      "steam_appid": null,
+      "steam_appid": 1161580,
       "itad_id": "018d937f-3e71-725f-b16a-2a76b013b956",
       "itad_slug": "hardspace-shipbreaker",
       "playtime_minutes": 6,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Hogwarts Legacy",
       "normalized_title": "hogwarts legacy",
-      "steam_appid": null,
+      "steam_appid": 990080,
       "itad_id": "018d937f-6144-7057-ad1c-0e99a3a71797",
       "itad_slug": "hogwarts-legacy",
       "playtime_minutes": 33,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Hollow Knight: Silksong",
       "normalized_title": "hollow knight silksong",
-      "steam_appid": null,
+      "steam_appid": 1030300,
       "itad_id": "018d937f-1e67-708d-989d-b38bde2520fb",
       "itad_slug": "hollow-knight-silksong",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Immerse Gamepack",
       "normalized_title": "immerse gamepack",
-      "steam_appid": null,
+      "steam_appid": 3138960,
       "itad_id": "01966dd9-55a5-71b5-aba7-2a445807663a",
       "itad_slug": "immerse-gamepack",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Indiana Jones and the Great Circle",
       "normalized_title": "indiana jones and the great circle",
-      "steam_appid": null,
+      "steam_appid": 2677660,
       "itad_id": "018d937f-7b13-7325-845c-6f7e319f1a5a",
       "itad_slug": "indiana-jones-and-the-great-circle",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Kingdoms of Amalur: Re-Reckoning",
       "normalized_title": "kingdoms of amalur re reckoning",
-      "steam_appid": null,
+      "steam_appid": 1041720,
       "itad_id": "018d937f-43fe-7178-bf53-1e8a89d80a24",
       "itad_slug": "kingdoms-of-amalur-re-reckoning",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Kingdoms of Amalur: Reckoning™",
       "normalized_title": "kingdoms of amalur reckoning",
-      "steam_appid": null,
+      "steam_appid": 102500,
       "itad_id": "018d937f-1746-7199-9364-d85d56eb02cc",
       "itad_slug": "kingdoms-of-amalur-reckoning",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Last Epoch",
       "normalized_title": "last epoch",
-      "steam_appid": null,
+      "steam_appid": 899770,
       "itad_id": "018d937f-213f-7029-87ff-c2c883b8d4f6",
       "itad_slug": "last-epoch",
       "playtime_minutes": 76,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Left 4 Dead 2",
       "normalized_title": "left 4 dead 2",
-      "steam_appid": null,
+      "steam_appid": 550,
       "itad_id": "018d937f-2404-7297-93fb-94b54bdb74e5",
       "itad_slug": "left-4-dead-2",
       "playtime_minutes": 28,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Mafia: Definitive Edition",
       "normalized_title": "mafia definitive edition",
-      "steam_appid": null,
+      "steam_appid": 1030840,
       "itad_id": "018d937f-4293-7217-a8d5-41fbae8f2929",
       "itad_slug": "mafia-definitive-edition",
       "playtime_minutes": 202,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Manor Lords",
       "normalized_title": "manor lords",
-      "steam_appid": null,
+      "steam_appid": 1363080,
       "itad_id": "018d937f-43f3-7181-a7ef-f059395e87bc",
       "itad_slug": "manor-lords",
       "playtime_minutes": 19,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Marvel's Guardians of the Galaxy",
       "normalized_title": "marvel s guardians of the galaxy",
-      "steam_appid": null,
+      "steam_appid": 1088850,
       "itad_id": "018d937f-51cf-71a2-8359-bde44588c59a",
       "itad_slug": "marvels-guardians-of-the-galaxy",
       "playtime_minutes": 408,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Marvel's Guardians of the Galaxy: The Telltale Series",
       "normalized_title": "marvel s guardians of the galaxy the telltale series",
-      "steam_appid": null,
+      "steam_appid": 579950,
       "itad_id": "018d937f-2bc4-708f-9c42-163f0b461db2",
       "itad_slug": "marvels-guardians-of-the-galaxy-the-telltale-series",
       "playtime_minutes": 73,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Marvel's Midnight Suns",
       "normalized_title": "marvel s midnight suns",
-      "steam_appid": null,
+      "steam_appid": 368260,
       "itad_id": "018d937f-55b3-7250-9c70-2bcca9ac320f",
       "itad_slug": "marvels-midnight-suns",
       "playtime_minutes": 7301,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
@@ -751,75 +880,129 @@
       ]
     },
     {
-      "title": "Mass Effect 2 (2010 Edition)",
+      "title": "Marvel’s Spider-Man Remastered",
+      "normalized_title": "marvels spider man remastered",
+      "steam_appid": 1817070,
+      "itad_id": null,
+      "itad_slug": null,
+      "playtime_minutes": 0,
+      "added_at": null,
+      "sources": [
+        "steam"
+      ]
+    },
+    {
+      "title": "Mass Effect 2 (2010)",
+      "normalized_title": "mass effect 2 2010",
+      "steam_appid": 24980,
+      "itad_id": null,
+      "itad_slug": null,
+      "playtime_minutes": 38,
+      "added_at": null,
+      "sources": [
+        "steam"
+      ]
+    },
+    {
+      "title": "Mass Effect 2 (2010) Edition",
       "normalized_title": "mass effect 2 2010 edition",
-      "steam_appid": null,
+      "steam_appid": 2362420,
       "itad_id": "018d937f-6d20-7059-905f-15303856b01a",
       "itad_slug": "mass-effect-2-2010-edition",
-      "playtime_minutes": 38,
+      "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Mass Effect (2007)",
       "normalized_title": "mass effect 2007",
-      "steam_appid": null,
+      "steam_appid": 17460,
       "itad_id": "018d937f-4d3f-72ee-b598-97cbfa030c47",
       "itad_slug": "mass-effect-2007",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Mass Effect™ Legendary Edition",
       "normalized_title": "mass effect legendary edition",
-      "steam_appid": null,
+      "steam_appid": 1328670,
       "itad_id": "018d937f-4b67-7020-aac6-246767f92aa6",
       "itad_slug": "mass-effect-legendary-edition",
       "playtime_minutes": 597,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
-      "title": "Middle-earth: Shadow of Mordor",
+      "title": "Middle-earth™: Shadow of Mordor™",
       "normalized_title": "middle earth shadow of mordor",
-      "steam_appid": null,
+      "steam_appid": 241930,
       "itad_id": "018d937f-0a89-7069-a869-1ade408b2d54",
       "itad_slug": "middle-earth-shadow-of-mordor",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "No Man's Sky",
       "normalized_title": "no man s sky",
-      "steam_appid": null,
+      "steam_appid": 275850,
       "itad_id": "018d937f-15f9-7056-8edf-2e8fa4b8f357",
       "itad_slug": "no-mans-sky",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
+      ]
+    },
+    {
+      "title": "Path of Exile",
+      "normalized_title": "path of exile",
+      "steam_appid": 238960,
+      "itad_id": null,
+      "itad_slug": null,
+      "playtime_minutes": 138,
+      "added_at": null,
+      "sources": [
+        "steam"
       ]
     },
     {
       "title": "Path of Exile 2",
       "normalized_title": "path of exile 2",
-      "steam_appid": null,
+      "steam_appid": 2694490,
       "itad_id": "018d937f-798a-718a-8a1b-dc62e236c3bb",
       "itad_slug": "path-of-exile-2",
       "playtime_minutes": 136,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
+      ]
+    },
+    {
+      "title": "Pillars of Eternity",
+      "normalized_title": "pillars of eternity",
+      "steam_appid": 291650,
+      "itad_id": null,
+      "itad_slug": null,
+      "playtime_minutes": 0,
+      "added_at": null,
+      "sources": [
+        "steam"
       ]
     },
     {
@@ -837,337 +1020,377 @@
     {
       "title": "Pillars of Eternity II: Deadfire",
       "normalized_title": "pillars of eternity ii deadfire",
-      "steam_appid": null,
+      "steam_appid": 560130,
       "itad_id": "018d937f-2db9-7369-8fb1-3f104d3341b8",
       "itad_slug": "pillars-of-eternity-ii-deadfire",
       "playtime_minutes": 447,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Portal 2",
       "normalized_title": "portal 2",
-      "steam_appid": null,
+      "steam_appid": 620,
       "itad_id": "018d937f-21e1-728e-86d7-9acb3c59f2bb",
       "itad_slug": "portal-2",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Potion Craft: Alchemist Simulator",
       "normalized_title": "potion craft alchemist simulator",
-      "steam_appid": null,
+      "steam_appid": 1210320,
       "itad_id": "018d937f-4ec1-7046-a86c-1ee15a9a4349",
       "itad_slug": "potion-craft-alchemist-simulator",
       "playtime_minutes": 27,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "PUBG: BATTLEGROUNDS",
       "normalized_title": "pubg battlegrounds",
-      "steam_appid": null,
+      "steam_appid": 578080,
       "itad_id": "018d937f-57ce-723f-b7e7-7c7b5df93471",
       "itad_slug": "pubg-battlegrounds",
       "playtime_minutes": 28,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Red Dead Redemption 2",
       "normalized_title": "red dead redemption 2",
-      "steam_appid": null,
+      "steam_appid": 1174180,
       "itad_id": "018d937f-3a3b-7210-bd2d-0d1dfb1d84c0",
       "itad_slug": "red-dead-redemption-2",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
-      "title": "RIFT™",
+      "title": "RIFT",
       "normalized_title": "rift",
-      "steam_appid": null,
+      "steam_appid": 39120,
       "itad_id": "018d937f-0c6a-71f4-8f59-699ecc65acbb",
       "itad_slug": "rift",
       "playtime_minutes": 301,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Sea of Thieves",
       "normalized_title": "sea of thieves",
-      "steam_appid": null,
+      "steam_appid": 1172620,
       "itad_id": "018d937f-1f0a-73a6-a3aa-b861902b50a6",
       "itad_slug": "sea-of-thieves",
       "playtime_minutes": 151,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Sid Meier's Civilization: Beyond Earth",
       "normalized_title": "sid meier s civilization beyond earth",
-      "steam_appid": null,
+      "steam_appid": 65980,
       "itad_id": "018d937e-f894-7298-aa8b-effcb532df75",
       "itad_slug": "sid-meiers-civilization-beyond-earth",
       "playtime_minutes": 402,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Sid Meier's Civilization V",
       "normalized_title": "sid meier s civilization v",
-      "steam_appid": null,
+      "steam_appid": 8930,
       "itad_id": "018d937e-fce3-7094-bf5f-033eef93575d",
       "itad_slug": "sid-meiers-civilization-v",
       "playtime_minutes": 373,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
-      "title": "Sid Meier's Civilization® VI",
+      "title": "Sid Meier's Civilization VI",
       "normalized_title": "sid meier s civilization vi",
-      "steam_appid": null,
+      "steam_appid": 289070,
       "itad_id": "018d937e-f81a-7288-868c-49236397885a",
       "itad_slug": "sid-meiers-civilization-vi",
       "playtime_minutes": 554,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
-      "title": "Sid Meier's Civilization® VII",
+      "title": "Sid Meier's Civilization VII",
       "normalized_title": "sid meier s civilization vii",
-      "steam_appid": null,
+      "steam_appid": 1295660,
       "itad_id": "018ff49c-05f6-73d1-9ad6-0ebf81905107",
       "itad_slug": "sid-meiers-civilization-vii",
       "playtime_minutes": 78,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Slay the Princess — The Pristine Cut",
       "normalized_title": "slay the princess the pristine cut",
-      "steam_appid": null,
+      "steam_appid": 1989270,
       "itad_id": "0192bf6f-7beb-7172-90e2-47eaa07974ec",
       "itad_slug": "slay-the-princess-the-pristine-cut",
       "playtime_minutes": 81,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Slay the Spire",
       "normalized_title": "slay the spire",
-      "steam_appid": null,
+      "steam_appid": 646570,
       "itad_id": "018d937f-285e-7065-a58b-23400688cc12",
       "itad_slug": "slay-the-spire",
       "playtime_minutes": 365,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Slay the Spire 2",
       "normalized_title": "slay the spire 2",
-      "steam_appid": null,
+      "steam_appid": 2868840,
       "itad_id": "018ec8ff-e01c-70b6-bf65-5b184f82f859",
       "itad_slug": "slay-the-spire-2",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
-      "title": "South Park: The Stick of Truth",
+      "title": "South Park™: The Stick of Truth™",
       "normalized_title": "south park the stick of truth",
-      "steam_appid": null,
+      "steam_appid": 213670,
       "itad_id": "018d937e-ea28-7385-82ae-194da55d7217",
       "itad_slug": "south-park-the-stick-of-truth",
       "playtime_minutes": 3172,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
-      "title": "Star Wars: Dark Forces Remaster",
+      "title": "STAR WARS™: Dark Forces Remaster",
       "normalized_title": "star wars dark forces remaster",
-      "steam_appid": null,
+      "steam_appid": 2292260,
       "itad_id": "018d937f-74c4-72c4-8bed-60e92c841be1",
       "itad_slug": "star-wars-dark-forces-remaster",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
-      "title": "STAR WARS Jedi: Survivor™‎",
+      "title": "STAR WARS Jedi: Survivor™",
       "normalized_title": "star wars jedi survivor",
-      "steam_appid": null,
+      "steam_appid": 1774580,
       "itad_id": "018d937f-679d-712f-8751-a010d35def06",
       "itad_slug": "star-wars-jedi-survivor",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "STAR WARS™: Squadrons",
       "normalized_title": "star wars squadrons",
-      "steam_appid": null,
+      "steam_appid": 1222730,
       "itad_id": "018d937f-438a-72f7-8348-8f4ef1f33337",
       "itad_slug": "star-wars-squadrons",
       "playtime_minutes": 31,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Starfield",
       "normalized_title": "starfield",
-      "steam_appid": null,
+      "steam_appid": 1716740,
       "itad_id": "018d937f-6181-735a-af8a-95670cc81e27",
       "itad_slug": "starfield",
       "playtime_minutes": 64,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Suicide Squad: Kill the Justice League",
       "normalized_title": "suicide squad kill the justice league",
-      "steam_appid": null,
+      "steam_appid": 315210,
       "itad_id": "018d937f-6a1e-7110-bdb5-7b0d9fd5981f",
       "itad_slug": "suicide-squad-kill-the-justice-league",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "The Banner Saga",
       "normalized_title": "the banner saga",
-      "steam_appid": null,
+      "steam_appid": 237990,
       "itad_id": "018d937f-0fc0-7310-a1b7-300e83cccf14",
       "itad_slug": "the-banner-saga",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "The Banner Saga 2",
       "normalized_title": "the banner saga 2",
-      "steam_appid": null,
+      "steam_appid": 281640,
       "itad_id": "018d937f-37aa-736f-bcac-0c73a4f40a0e",
       "itad_slug": "the-banner-saga-2",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "The Banner Saga 3",
       "normalized_title": "the banner saga 3",
-      "steam_appid": null,
+      "steam_appid": 485460,
       "itad_id": "018d937e-fa3f-72c8-b82f-985acb0d5e5f",
       "itad_slug": "the-banner-saga-3",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "The Elder Scrolls V: Skyrim",
       "normalized_title": "the elder scrolls v skyrim",
-      "steam_appid": null,
+      "steam_appid": 72850,
       "itad_id": "018d937f-2b23-73a3-9b40-d93860065d00",
       "itad_slug": "the-elder-scrolls-v-skyrim",
       "playtime_minutes": 302,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "The Walking Dead",
       "normalized_title": "the walking dead",
-      "steam_appid": null,
+      "steam_appid": 207610,
       "itad_id": "018d937e-f05c-7388-88ac-876eacf2e2fd",
       "itad_slug": "the-walking-dead",
       "playtime_minutes": 1724,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "The Walking Dead: Season Two",
       "normalized_title": "the walking dead season two",
-      "steam_appid": null,
+      "steam_appid": 261030,
       "itad_id": "018d937e-ffb9-707b-a6dd-86c93c60b01f",
       "itad_slug": "the-walking-dead-season-two",
       "playtime_minutes": 8894,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "The Witcher 3: Wild Hunt",
       "normalized_title": "the witcher 3 wild hunt",
-      "steam_appid": null,
+      "steam_appid": 292030,
       "itad_id": "018d937f-1212-7232-b23f-a046f6fd4a57",
       "itad_slug": "the-witcher-3-wild-hunt",
       "playtime_minutes": 248,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "The Wolf Among Us",
       "normalized_title": "the wolf among us",
-      "steam_appid": null,
+      "steam_appid": 250320,
       "itad_id": "018d937f-0ea6-732e-866d-75df62546c6b",
       "itad_slug": "the-wolf-among-us",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
+      ]
+    },
+    {
+      "title": "Ticket to Ride",
+      "normalized_title": "ticket to ride",
+      "steam_appid": 108200,
+      "itad_id": null,
+      "itad_slug": null,
+      "playtime_minutes": 0,
+      "added_at": null,
+      "sources": [
+        "steam"
       ]
     },
     {
@@ -1185,13 +1408,26 @@
     {
       "title": "Timberborn",
       "normalized_title": "timberborn",
-      "steam_appid": null,
+      "steam_appid": 1062090,
       "itad_id": "018d937f-3a24-70e6-8282-fe02b3f76068",
       "itad_slug": "timberborn",
       "playtime_minutes": 17,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
+      ]
+    },
+    {
+      "title": "Tomb Raider",
+      "normalized_title": "tomb raider",
+      "steam_appid": 203160,
+      "itad_id": null,
+      "itad_slug": null,
+      "playtime_minutes": 0,
+      "added_at": null,
+      "sources": [
+        "steam"
       ]
     },
     {
@@ -1209,120 +1445,142 @@
     {
       "title": "Torchlight",
       "normalized_title": "torchlight",
-      "steam_appid": null,
+      "steam_appid": 41500,
       "itad_id": "018d937e-ea12-720c-9024-4983cebd4759",
       "itad_slug": "torchlight",
       "playtime_minutes": 33,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "V Rising",
       "normalized_title": "v rising",
-      "steam_appid": null,
+      "steam_appid": 1604030,
       "itad_id": "018d937f-502d-707c-b964-11cd6990ba4f",
       "itad_slug": "v-rising",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Valheim",
       "normalized_title": "valheim",
-      "steam_appid": null,
+      "steam_appid": 892970,
       "itad_id": "018d937e-f803-7329-b166-49740f47e000",
       "itad_slug": "valheim",
       "playtime_minutes": 9,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "Warhammer 40,000: Rogue Trader",
       "normalized_title": "warhammer 40 000 rogue trader",
-      "steam_appid": null,
+      "steam_appid": 2186680,
       "itad_id": "018d937f-66c4-73c9-996f-9034adea22e2",
       "itad_slug": "warhammer-40000-rogue-trader",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
+      ]
+    },
+    {
+      "title": "Warhammer 40,000: Speed Freeks Open Beta",
+      "normalized_title": "warhammer 40 000 speed freeks open beta",
+      "steam_appid": 2419650,
+      "itad_id": null,
+      "itad_slug": null,
+      "playtime_minutes": 0,
+      "added_at": null,
+      "sources": [
+        "steam"
       ]
     },
     {
       "title": "Wartales",
       "normalized_title": "wartales",
-      "steam_appid": null,
+      "steam_appid": 1527950,
       "itad_id": "018d937f-51d0-71f8-bae2-772198af59c9",
       "itad_slug": "wartales",
       "playtime_minutes": 56,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "X-COM: Apocalypse",
       "normalized_title": "x com apocalypse",
-      "steam_appid": null,
+      "steam_appid": 7660,
       "itad_id": "018d937e-f558-71de-ac04-20579eafb95f",
       "itad_slug": "x-com-apocalypse",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
       "title": "X-COM: Enforcer",
       "normalized_title": "x com enforcer",
-      "steam_appid": null,
+      "steam_appid": 7770,
       "itad_id": "018d937e-ea42-70b0-afaa-03eab4eb43f6",
       "itad_slug": "x-com-enforcer",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
-      "title": "X-Com: Interceptor",
+      "title": "X-COM: Interceptor",
       "normalized_title": "x com interceptor",
-      "steam_appid": null,
+      "steam_appid": 7730,
       "itad_id": "018d937f-12e5-70f0-b5c0-e9285ba3c9f9",
       "itad_slug": "x-com-interceptor",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
-      "title": "X-COM: Terror From the Deep",
+      "title": "X-COM: Terror from the Deep",
       "normalized_title": "x com terror from the deep",
-      "steam_appid": null,
+      "steam_appid": 7650,
       "itad_id": "018d937e-f075-7232-ad5a-7bf4e271647b",
       "itad_slug": "x-com-terror-from-the-deep",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     },
     {
-      "title": "X-Com: UFO Defense",
+      "title": "X-COM: UFO Defense",
       "normalized_title": "x com ufo defense",
-      "steam_appid": null,
+      "steam_appid": 7760,
       "itad_id": "018d937f-1304-7116-8fdf-d7aace655320",
       "itad_slug": "x-com-ufo-defense",
       "playtime_minutes": 8,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
+        "steam",
         "itad_collection"
       ]
     }
@@ -1419,7 +1677,5 @@
       ]
     }
   ],
-  "warnings": [
-    "steam: not fetched (skipped): STEAM_API_KEY is not set (see .env.example)"
-  ]
+  "warnings": []
 }
