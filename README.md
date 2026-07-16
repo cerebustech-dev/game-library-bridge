@@ -128,6 +128,15 @@ candidate plus reasons to `public/games.rejected.json` for inspection.
 Writes are atomic (temp file + rename), and every snapshot is validated against
 the schema before it touches disk.
 
+## Change detection
+
+When the guard passes but `content_hash` and `schema_version` match the
+previous snapshot, **nothing is written**: `snapshot_version` and
+`generated_at` only advance when the library content actually changed (or the
+document format was upgraded). The refresh workflow piggybacks on this — an
+untouched file means no commit and no Pages deploy that day. `--force`
+rewrites regardless.
+
 ## Configuration
 
 All via environment variables / `.env` — see [.env.example](.env.example).

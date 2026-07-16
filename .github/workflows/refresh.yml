@@ -16,6 +16,8 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.detect.outputs.changed }}
     steps:
       - uses: actions/checkout@v4
 
@@ -50,12 +52,24 @@ jobs:
           path: public/games.rejected.json
           if-no-files-found: ignore
 
-      - name: Commit updated snapshot
+      # The tool skips the write entirely when content_hash (and
+      # schema_version) match the previous snapshot, so an untouched file
+      # means "library unchanged" — no commit, no deploy.
+      # (git status also catches the never-committed first snapshot,
+      # which git diff would miss as untracked.)
+      - name: Detect snapshot change
+        id: detect
         run: |
-          if git diff --quiet -- public/games.json; then
-            echo "Snapshot unchanged; nothing to commit."
-            exit 0
+          if [ -n "$(git status --porcelain -- public/games.json)" ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Snapshot unchanged; skipping commit and deploy."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
           fi
+
+      - name: Commit updated snapshot
+        if: steps.detect.outputs.changed == 'true'
+        run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add public/games.json
@@ -66,12 +80,14 @@ jobs:
       # pages.yml: pushes made with the default GITHUB_TOKEN deliberately do
       # not trigger other workflows.
       - name: Upload Pages artifact
+        if: steps.detect.outputs.changed == 'true'
         uses: actions/upload-pages-artifact@v3
         with:
           path: public
 
   deploy:
     needs: refresh
+    if: needs.refresh.outputs.changed == 'true'
     runs-on: ubuntu-latest
     permissions:
       pages: write

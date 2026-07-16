@@ -104,6 +104,20 @@ def _fetch_itad(source: str, settings: Settings, client: ItadClient, skip: bool)
         return FetchResult(source, status=STATUS_ERROR, error=combined)
 
 
+def _content_unchanged(previous: dict | None, candidate: dict) -> bool:
+    """True when writing would change nothing but run metadata.
+
+    Requires matching schema_version too: a document-format upgrade must be
+    republished even if the library content is identical.
+    """
+    return (
+        previous is not None
+        and previous.get("schema_version") == candidate["schema_version"]
+        and previous.get("content_hash") is not None
+        and previous.get("content_hash") == candidate["content_hash"]
+    )
+
+
 def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         prog="game-library-bridge",
@@ -111,7 +125,7 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     )
     parser.add_argument("--output", type=Path, default=None, help="output path (default: OUTPUT_PATH env or public/games.json)")
     parser.add_argument("--dry-run", action="store_true", help="fetch and validate but write nothing")
-    parser.add_argument("--force", action="store_true", help="write even if the snapshot guard objects")
+    parser.add_argument("--force", action="store_true", help="write even if the snapshot guard objects or the content is unchanged")
     parser.add_argument("--allow-degraded", action="store_true", help="allow writing when a previously-contributing source failed")
     parser.add_argument("--skip-steam", action="store_true", help="do not fetch Steam")
     parser.add_argument("--skip-itad", action="store_true", help="do not fetch ITAD collection/waitlist")
@@ -164,6 +178,16 @@ def run(argv: list[str] | None = None) -> int:
     if reasons:
         log.warning("guard overridden by --force", extra={"reasons": reasons})
         candidate["warnings"].extend(f"guard overridden by --force: {r}" for r in reasons)
+
+    if _content_unchanged(previous, candidate) and not args.force:
+        log.info(
+            "library content unchanged; keeping previous snapshot",
+            extra={
+                "content_hash": candidate["content_hash"],
+                "snapshot_version": previous["snapshot_version"],
+            },
+        )
+        return 0
 
     if args.dry_run:
         log.info(

@@ -54,8 +54,10 @@ that always serves the latest valid snapshot.
 ```
 cron (daily 05:17 UTC)
   └─ refresh.yml: fetch Steam + ITAD → merge → schema-validate → guard
-       ├─ guard OK  → commit public/games.json if changed → push to main
-       │              → deploy public/ to GitHub Pages (same workflow)
+       ├─ guard OK, content_hash unchanged → nothing written,
+       │                                     no commit, no deploy
+       ├─ guard OK, library changed → write → commit → push to main
+       │                              → deploy public/ to GitHub Pages
        └─ guard REJECTS → job fails (exit 2), previous snapshot stays,
                           nothing is deployed
              └─ games.rejected.json uploaded as a workflow artifact

@@ -48,13 +48,68 @@ def test_full_run_writes_valid_snapshot(tmp_path, fixture_text, fixture_json):
 
 
 @responses.activate
-def test_second_run_bumps_version(tmp_path, fixture_text, fixture_json):
+def test_unchanged_content_skips_write(tmp_path, fixture_text, fixture_json):
+    mock_happy_path(responses, fixture_text, fixture_json)
+    out = tmp_path / "games.json"
+    assert run(["--output", str(out)]) == 0
+    before = out.read_text(encoding="utf-8")
+
+    mock_happy_path(responses, fixture_text, fixture_json)
+    assert run(["--output", str(out)]) == 0
+
+    # Identical library -> file untouched, version and timestamps unchanged.
+    assert out.read_text(encoding="utf-8") == before
+
+
+@responses.activate
+def test_changed_content_bumps_version(tmp_path, fixture_text, fixture_json):
+    mock_happy_path(responses, fixture_text, fixture_json)
+    out = tmp_path / "games.json"
+    assert run(["--output", str(out)]) == 0
+
+    # Same as happy path but the waitlist gained a game.
+    responses.get(OWNED_GAMES_URL, json=fixture_json("steam_owned_games.json"))
+    responses.get(f"{BASE_URL}/uid/arcca/collection/", body=fixture_text("itad_page.html"))
+    responses.post(f"{BASE_URL}{COLLECTION_API}", json=fixture_json("itad_collection_page0.json"))
+    responses.post(f"{BASE_URL}{COLLECTION_API}", json=[])
+    grown = fixture_json("itad_waitlist_page1.json")
+    grown["games"]["new-id"] = {"id": "new-id", "title": "Brand New Wish", "slug": "brand-new-wish", "added": 1784100000}
+    responses.post(f"{BASE_URL}{WAITLIST_API}", json=grown)
+
+    assert run(["--output", str(out)]) == 0
+
+    snap = json.loads(out.read_text(encoding="utf-8"))
+    assert snap["snapshot_version"] == 2
+    assert {e["title"] for e in snap["waitlisted"]} == {"Hollow Knight: Silksong", "Brand New Wish"}
+
+
+@responses.activate
+def test_schema_upgrade_forces_rewrite_despite_same_content(tmp_path, fixture_text, fixture_json):
+    mock_happy_path(responses, fixture_text, fixture_json)
+    out = tmp_path / "games.json"
+    assert run(["--output", str(out)]) == 0
+
+    # Simulate a previous snapshot written by an older document format.
+    downgraded = json.loads(out.read_text(encoding="utf-8"))
+    downgraded["schema_version"] = "1.0.0"
+    out.write_text(json.dumps(downgraded), encoding="utf-8")
+
+    mock_happy_path(responses, fixture_text, fixture_json)
+    assert run(["--output", str(out)]) == 0
+
+    snap = json.loads(out.read_text(encoding="utf-8"))
+    assert snap["schema_version"] != "1.0.0"
+    assert snap["snapshot_version"] == 2
+
+
+@responses.activate
+def test_force_rewrites_unchanged_content(tmp_path, fixture_text, fixture_json):
     mock_happy_path(responses, fixture_text, fixture_json)
     out = tmp_path / "games.json"
     assert run(["--output", str(out)]) == 0
 
     mock_happy_path(responses, fixture_text, fixture_json)
-    assert run(["--output", str(out)]) == 0
+    assert run(["--output", str(out), "--force"]) == 0
 
     snap = json.loads(out.read_text(encoding="utf-8"))
     assert snap["snapshot_version"] == 2
