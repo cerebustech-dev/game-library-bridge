@@ -1,0 +1,21 @@
+{
+  "hasNext": false,
+  "games": {
+    "018d937f-0000-709c-9595-786016460001": {
+      "id": "018d937f-0000-709c-9595-786016460001",
+      "slug": "hollow-knight-silksong",
+      "title": "Hollow Knight: Silksong",
+      "type": 1,
+      "mature": false,
+      "assets": {},
+      "bundled": false,
+      "added": 1784072999,
+      "notified": null,
+      "rules": [],
+      "bestPass": false,
+      "best": null,
+      "pass": null,
+      "diff": null
+    }
+  }
+}

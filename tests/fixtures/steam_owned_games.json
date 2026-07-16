@@ -1,0 +1,40 @@
+{
+  "response": {
+    "game_count": 3,
+    "games": [
+      {
+        "appid": 320,
+        "name": "Half-Life 2: Deathmatch",
+        "playtime_forever": 0,
+        "img_icon_url": "795e85364189511f4990861b578084deef086cb1",
+        "playtime_windows_forever": 0,
+        "playtime_mac_forever": 0,
+        "playtime_linux_forever": 0,
+        "playtime_deck_forever": 0,
+        "rtime_last_played": 0
+      },
+      {
+        "appid": 41500,
+        "name": "Torchlight",
+        "playtime_forever": 341,
+        "img_icon_url": "d8a5d8bbec06d7107cbaf1a1bf2d61f3184b0b0e",
+        "playtime_windows_forever": 341,
+        "playtime_mac_forever": 0,
+        "playtime_linux_forever": 0,
+        "playtime_deck_forever": 0,
+        "rtime_last_played": 1450000000
+      },
+      {
+        "appid": 1328670,
+        "name": "Mass Effect™ Legendary Edition",
+        "playtime_forever": 597,
+        "img_icon_url": "1e9b6b3f5bd58f915e8a041c66c9c6bc9797be79",
+        "playtime_windows_forever": 597,
+        "playtime_mac_forever": 0,
+        "playtime_linux_forever": 0,
+        "playtime_deck_forever": 0,
+        "rtime_last_played": 1700000000
+      }
+    ]
+  }
+}

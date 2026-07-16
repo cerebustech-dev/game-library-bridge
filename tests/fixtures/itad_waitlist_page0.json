@@ -1,0 +1,29 @@
+{
+  "hasNext": true,
+  "games": {
+    "018d937f-4683-709c-9595-78901646ffd8": {
+      "id": "018d937f-4683-709c-9595-78901646ffd8",
+      "slug": "graven",
+      "title": "GRAVEN",
+      "type": 1,
+      "mature": false,
+      "assets": {},
+      "bundled": false,
+      "added": 1784072811,
+      "notified": 1784224962,
+      "rules": [],
+      "bestPass": false,
+      "best": {
+        "shop": 29,
+        "cut": 82,
+        "priceNew": [445, "USD"],
+        "priceOld": [2499, "USD"],
+        "flag": "S",
+        "voucher": null,
+        "url": "https://itad.link/018d9386-6e42-73bd-a25a-0ffa6cb0c4bb/"
+      },
+      "pass": null,
+      "diff": null
+    }
+  }
+}

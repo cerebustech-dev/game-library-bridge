@@ -1,0 +1,25 @@
+# Secrets / local config
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+
+# Tooling
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+uv.lock.tmp
+
+# Snapshot rejects (candidate snapshots that failed the guard; inspect, then delete)
+public/games.rejected.json
+
+# OS noise
+Thumbs.db
+.DS_Store

@@ -1,0 +1,63 @@
+name: Refresh games.json
+
+on:
+  schedule:
+    # Daily, 05:17 UTC (odd minute to avoid the top-of-hour cron rush).
+    - cron: "17 5 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-snapshot
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install project
+        run: uv sync
+
+      - name: Build snapshot
+        id: build
+        env:
+          # Set in repo Settings -> Secrets and variables -> Actions.
+          # The key is never printed; the tool redacts it from errors.
+          STEAM_API_KEY: ${{ secrets.STEAM_API_KEY }}
+          STEAM_ID: "76561197970928054"
+          ITAD_USER: "arcca"
+          OUTPUT_PATH: public/games.json
+          LOG_FORMAT: json
+        run: uv run python -m game_library_bridge
+
+      # If the guard rejected the candidate, the step above exits 2 and the
+      # job fails loudly; the rejected candidate is preserved as an artifact
+      # for inspection while the previous snapshot stays published.
+      - name: Upload rejected candidate (guard failure)
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rejected-snapshot
+          path: public/games.rejected.json
+          if-no-files-found: ignore
+
+      - name: Commit updated snapshot
+        run: |
+          if git diff --quiet -- public/games.json; then
+            echo "Snapshot unchanged; nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/games.json
+          git commit -m "chore: refresh games.json snapshot"
+          git push

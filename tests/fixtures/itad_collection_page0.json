@@ -1,0 +1,48 @@
+{
+  "018d937e-e9c1-71fc-9f4a-472d667bd661": {
+    "id": "018d937e-e9c1-71fc-9f4a-472d667bd661",
+    "slug": "half-life-2-deathmatch",
+    "title": "Half-Life 2: Deathmatch",
+    "type": 1,
+    "mature": false,
+    "assets": {
+      "boxart": "https://assets.isthereanydeal.com/018d937e-e9c1-71fc-9f4a-472d667bd661/boxart.jpg"
+    },
+    "platforms": [1, 3],
+    "added": 1784072808,
+    "playtime": 0
+  },
+  "018d937e-ea12-720c-9024-4983cebd4759": {
+    "id": "018d937e-ea12-720c-9024-4983cebd4759",
+    "slug": "torchlight",
+    "title": "Torchlight",
+    "type": 1,
+    "mature": false,
+    "assets": {},
+    "platforms": [1],
+    "added": 1784072808,
+    "playtime": 341
+  },
+  "018d937e-ffff-720c-9024-4983cebd0001": {
+    "id": "018d937e-ffff-720c-9024-4983cebd0001",
+    "slug": "mass-effect-legendary-edition",
+    "title": "Mass Effect™ Legendary Edition",
+    "type": 1,
+    "mature": false,
+    "assets": {},
+    "platforms": [1],
+    "added": 1784072900,
+    "playtime": 597
+  },
+  "018d937e-ffff-720c-9024-4983cebd0002": {
+    "id": "018d937e-ffff-720c-9024-4983cebd0002",
+    "slug": "itad-only-gem",
+    "title": "ITAD Only Gem",
+    "type": 1,
+    "mature": false,
+    "assets": {},
+    "platforms": [],
+    "added": 1784073000,
+    "playtime": 45
+  }
+}
