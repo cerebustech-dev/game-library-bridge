@@ -1,7 +1,8 @@
 {
-  "schema_version": "1.0.0",
-  "snapshot_version": 3,
-  "generated_at": "2026-07-16T23:34:17Z",
+  "schema_version": "1.1.0",
+  "snapshot_version": 4,
+  "generated_at": "2026-07-16T23:43:49Z",
+  "content_hash": "sha256:4bd2d3273f8413b378835b9d0a778ed1e44c26e150162b42da1c0c9777252961",
   "identity": {
     "steam_id": "76561197970928054",
     "itad_user": "arcca"
@@ -9,26 +10,28 @@
   "sources": {
     "steam": {
       "status": "ok",
-      "fetched_at": "2026-07-16T23:34:16Z",
+      "fetched_at": "2026-07-16T23:43:46Z",
       "count": 115,
       "via": "steam-web-api",
       "error": null
     },
     "itad_collection": {
       "status": "ok",
-      "fetched_at": "2026-07-16T23:34:17Z",
+      "fetched_at": "2026-07-16T23:43:48Z",
       "count": 108,
       "via": "json-api",
       "error": null
     },
     "itad_waitlist": {
       "status": "ok",
-      "fetched_at": "2026-07-16T23:34:17Z",
+      "fetched_at": "2026-07-16T23:43:49Z",
       "count": 9,
       "via": "json-api",
       "error": null
     }
   },
+  "owned_count": 121,
+  "waitlisted_count": 9,
   "owned": [
     {
       "title": "3DMark Demo",
