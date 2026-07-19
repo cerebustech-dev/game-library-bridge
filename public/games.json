@@ -1,8 +1,8 @@
 {
   "schema_version": "1.1.0",
-  "snapshot_version": 4,
-  "generated_at": "2026-07-16T23:43:49Z",
-  "content_hash": "sha256:4bd2d3273f8413b378835b9d0a778ed1e44c26e150162b42da1c0c9777252961",
+  "snapshot_version": 5,
+  "generated_at": "2026-07-19T07:35:44Z",
+  "content_hash": "sha256:529cd32f12fbd14c852df0e8c22d2398acbd0d25e4f84576a2408905c04b5343",
   "identity": {
     "steam_id": "76561197970928054",
     "itad_user": "arcca"
@@ -10,27 +10,27 @@
   "sources": {
     "steam": {
       "status": "ok",
-      "fetched_at": "2026-07-16T23:43:46Z",
-      "count": 115,
+      "fetched_at": "2026-07-19T07:35:42Z",
+      "count": 116,
       "via": "steam-web-api",
       "error": null
     },
     "itad_collection": {
       "status": "ok",
-      "fetched_at": "2026-07-16T23:43:48Z",
+      "fetched_at": "2026-07-19T07:35:44Z",
       "count": 108,
       "via": "json-api",
       "error": null
     },
     "itad_waitlist": {
       "status": "ok",
-      "fetched_at": "2026-07-16T23:43:49Z",
+      "fetched_at": "2026-07-19T07:35:44Z",
       "count": 9,
       "via": "json-api",
       "error": null
     }
   },
-  "owned_count": 121,
+  "owned_count": 122,
   "waitlisted_count": 9,
   "owned": [
     {
@@ -1265,6 +1265,18 @@
       "sources": [
         "steam",
         "itad_collection"
+      ]
+    },
+    {
+      "title": "Stray",
+      "normalized_title": "stray",
+      "steam_appid": 1332010,
+      "itad_id": null,
+      "itad_slug": null,
+      "playtime_minutes": 0,
+      "added_at": null,
+      "sources": [
+        "steam"
       ]
     },
     {
