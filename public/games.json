@@ -1,8 +1,8 @@
 {
   "schema_version": "1.1.0",
-  "snapshot_version": 5,
-  "generated_at": "2026-07-19T07:35:44Z",
-  "content_hash": "sha256:529cd32f12fbd14c852df0e8c22d2398acbd0d25e4f84576a2408905c04b5343",
+  "snapshot_version": 6,
+  "generated_at": "2026-07-20T08:17:35Z",
+  "content_hash": "sha256:655e3d156410fb01b2336392504df497d30771fe8c7d016af9b6012b6a5083c5",
   "identity": {
     "steam_id": "76561197970928054",
     "itad_user": "arcca"
@@ -10,21 +10,21 @@
   "sources": {
     "steam": {
       "status": "ok",
-      "fetched_at": "2026-07-19T07:35:42Z",
+      "fetched_at": "2026-07-20T08:17:33Z",
       "count": 116,
       "via": "steam-web-api",
       "error": null
     },
     "itad_collection": {
       "status": "ok",
-      "fetched_at": "2026-07-19T07:35:44Z",
-      "count": 108,
+      "fetched_at": "2026-07-20T08:17:35Z",
+      "count": 109,
       "via": "json-api",
       "error": null
     },
     "itad_waitlist": {
       "status": "ok",
-      "fetched_at": "2026-07-19T07:35:44Z",
+      "fetched_at": "2026-07-20T08:17:35Z",
       "count": 9,
       "via": "json-api",
       "error": null
@@ -1271,12 +1271,13 @@
       "title": "Stray",
       "normalized_title": "stray",
       "steam_appid": 1332010,
-      "itad_id": null,
-      "itad_slug": null,
+      "itad_id": "018d937f-194c-7075-b7c9-a3c1fd30c467",
+      "itad_slug": "stray",
       "playtime_minutes": 0,
-      "added_at": null,
+      "added_at": "2026-07-19T16:30:59Z",
       "sources": [
-        "steam"
+        "steam",
+        "itad_collection"
       ]
     },
     {
