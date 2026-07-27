@@ -1,8 +1,8 @@
 {
   "schema_version": "1.1.0",
-  "snapshot_version": 6,
-  "generated_at": "2026-07-20T08:17:35Z",
-  "content_hash": "sha256:655e3d156410fb01b2336392504df497d30771fe8c7d016af9b6012b6a5083c5",
+  "snapshot_version": 7,
+  "generated_at": "2026-07-27T08:46:54Z",
+  "content_hash": "sha256:8e00a36a24ab43024a6639a2e657b499c81367f826d87b4045550b906742a107",
   "identity": {
     "steam_id": "76561197970928054",
     "itad_user": "arcca"
@@ -10,21 +10,21 @@
   "sources": {
     "steam": {
       "status": "ok",
-      "fetched_at": "2026-07-20T08:17:33Z",
+      "fetched_at": "2026-07-27T08:46:52Z",
       "count": 116,
       "via": "steam-web-api",
       "error": null
     },
     "itad_collection": {
       "status": "ok",
-      "fetched_at": "2026-07-20T08:17:35Z",
+      "fetched_at": "2026-07-27T08:46:54Z",
       "count": 109,
       "via": "json-api",
       "error": null
     },
     "itad_waitlist": {
       "status": "ok",
-      "fetched_at": "2026-07-20T08:17:35Z",
+      "fetched_at": "2026-07-27T08:46:54Z",
       "count": 9,
       "via": "json-api",
       "error": null
@@ -128,7 +128,7 @@
       "steam_appid": 1086940,
       "itad_id": "018d9584-24d6-7010-b82b-df1f0b154cc7",
       "itad_slug": "baldurs-gate-3",
-      "playtime_minutes": 14068,
+      "playtime_minutes": 14069,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
         "steam",
@@ -733,7 +733,7 @@
       "steam_appid": 3138960,
       "itad_id": "01966dd9-55a5-71b5-aba7-2a445807663a",
       "itad_slug": "immerse-gamepack",
-      "playtime_minutes": 0,
+      "playtime_minutes": 499,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
         "steam",
