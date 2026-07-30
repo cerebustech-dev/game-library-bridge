@@ -1,8 +1,8 @@
 {
   "schema_version": "1.1.0",
-  "snapshot_version": 9,
-  "generated_at": "2026-07-29T07:52:15Z",
-  "content_hash": "sha256:f89bfe885133cd95c778f54ede9387dae1ce199eb1842623455a15e5e0767c4a",
+  "snapshot_version": 10,
+  "generated_at": "2026-07-30T07:42:40Z",
+  "content_hash": "sha256:1c8021555ab94c4c73ea26ec28e3fc2279efe66f66a03e23c2b1007f701b4ef6",
   "identity": {
     "steam_id": "76561197970928054",
     "itad_user": "arcca"
@@ -10,21 +10,21 @@
   "sources": {
     "steam": {
       "status": "ok",
-      "fetched_at": "2026-07-29T07:52:13Z",
+      "fetched_at": "2026-07-30T07:42:38Z",
       "count": 116,
       "via": "steam-web-api",
       "error": null
     },
     "itad_collection": {
       "status": "ok",
-      "fetched_at": "2026-07-29T07:52:15Z",
+      "fetched_at": "2026-07-30T07:42:39Z",
       "count": 109,
       "via": "json-api",
       "error": null
     },
     "itad_waitlist": {
       "status": "ok",
-      "fetched_at": "2026-07-29T07:52:15Z",
+      "fetched_at": "2026-07-30T07:42:40Z",
       "count": 10,
       "via": "json-api",
       "error": null
@@ -733,7 +733,7 @@
       "steam_appid": 3138960,
       "itad_id": "01966dd9-55a5-71b5-aba7-2a445807663a",
       "itad_slug": "immerse-gamepack",
-      "playtime_minutes": 3289,
+      "playtime_minutes": 4330,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
         "steam",
