@@ -1,8 +1,8 @@
 {
   "schema_version": "1.1.0",
-  "snapshot_version": 10,
-  "generated_at": "2026-07-30T07:42:40Z",
-  "content_hash": "sha256:1c8021555ab94c4c73ea26ec28e3fc2279efe66f66a03e23c2b1007f701b4ef6",
+  "snapshot_version": 11,
+  "generated_at": "2026-08-02T07:40:33Z",
+  "content_hash": "sha256:c39f1b967b1fc92b0a79db95fea2c7feb83e7cab4e58b094723a00f5ab9e7176",
   "identity": {
     "steam_id": "76561197970928054",
     "itad_user": "arcca"
@@ -10,28 +10,28 @@
   "sources": {
     "steam": {
       "status": "ok",
-      "fetched_at": "2026-07-30T07:42:38Z",
-      "count": 116,
+      "fetched_at": "2026-08-02T07:40:31Z",
+      "count": 117,
       "via": "steam-web-api",
       "error": null
     },
     "itad_collection": {
       "status": "ok",
-      "fetched_at": "2026-07-30T07:42:39Z",
+      "fetched_at": "2026-08-02T07:40:32Z",
       "count": 109,
       "via": "json-api",
       "error": null
     },
     "itad_waitlist": {
       "status": "ok",
-      "fetched_at": "2026-07-30T07:42:40Z",
-      "count": 10,
+      "fetched_at": "2026-08-02T07:40:33Z",
+      "count": 9,
       "via": "json-api",
       "error": null
     }
   },
-  "owned_count": 122,
-  "waitlisted_count": 10,
+  "owned_count": 123,
+  "waitlisted_count": 9,
   "owned": [
     {
       "title": "3DMark Demo",
@@ -699,6 +699,18 @@
       "sources": [
         "steam",
         "itad_collection"
+      ]
+    },
+    {
+      "title": "Heretic + Hexen",
+      "normalized_title": "heretic hexen",
+      "steam_appid": 3286930,
+      "itad_id": null,
+      "itad_slug": null,
+      "playtime_minutes": 0,
+      "added_at": null,
+      "sources": [
+        "steam"
       ]
     },
     {
@@ -1657,16 +1669,6 @@
       "normalized_title": "graven",
       "itad_id": "018d937f-4683-709c-9595-78901646ffd8",
       "itad_slug": "graven",
-      "added_at": "2026-07-14T23:46:51Z",
-      "sources": [
-        "itad_waitlist"
-      ]
-    },
-    {
-      "title": "Heretic + Hexen",
-      "normalized_title": "heretic hexen",
-      "itad_id": "019885b5-32d6-7172-8293-465abe1058a9",
-      "itad_slug": "heretic-and-hexen",
       "added_at": "2026-07-14T23:46:51Z",
       "sources": [
         "itad_waitlist"
