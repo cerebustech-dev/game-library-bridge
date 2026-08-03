@@ -1,8 +1,8 @@
 {
   "schema_version": "1.1.0",
-  "snapshot_version": 11,
-  "generated_at": "2026-08-02T07:40:33Z",
-  "content_hash": "sha256:c39f1b967b1fc92b0a79db95fea2c7feb83e7cab4e58b094723a00f5ab9e7176",
+  "snapshot_version": 12,
+  "generated_at": "2026-08-03T08:41:48Z",
+  "content_hash": "sha256:78b12195462e82ed73726a934ee6331e85e75bd2f794a0e834aa51ffbe6b5d97",
   "identity": {
     "steam_id": "76561197970928054",
     "itad_user": "arcca"
@@ -10,21 +10,21 @@
   "sources": {
     "steam": {
       "status": "ok",
-      "fetched_at": "2026-08-02T07:40:31Z",
+      "fetched_at": "2026-08-03T08:41:46Z",
       "count": 117,
       "via": "steam-web-api",
       "error": null
     },
     "itad_collection": {
       "status": "ok",
-      "fetched_at": "2026-08-02T07:40:32Z",
-      "count": 109,
+      "fetched_at": "2026-08-03T08:41:48Z",
+      "count": 110,
       "via": "json-api",
       "error": null
     },
     "itad_waitlist": {
       "status": "ok",
-      "fetched_at": "2026-08-02T07:40:33Z",
+      "fetched_at": "2026-08-03T08:41:48Z",
       "count": 9,
       "via": "json-api",
       "error": null
@@ -705,12 +705,13 @@
       "title": "Heretic + Hexen",
       "normalized_title": "heretic hexen",
       "steam_appid": 3286930,
-      "itad_id": null,
-      "itad_slug": null,
+      "itad_id": "019885b5-32d6-7172-8293-465abe1058a9",
+      "itad_slug": "heretic-and-hexen",
       "playtime_minutes": 0,
-      "added_at": null,
+      "added_at": "2026-08-02T17:50:54Z",
       "sources": [
-        "steam"
+        "steam",
+        "itad_collection"
       ]
     },
     {
