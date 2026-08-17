@@ -1,8 +1,8 @@
 {
   "schema_version": "1.1.0",
-  "snapshot_version": 12,
-  "generated_at": "2026-08-03T08:41:48Z",
-  "content_hash": "sha256:78b12195462e82ed73726a934ee6331e85e75bd2f794a0e834aa51ffbe6b5d97",
+  "snapshot_version": 13,
+  "generated_at": "2026-08-17T05:48:28Z",
+  "content_hash": "sha256:a9c0844df93906d73167757ce5db08b2dc189ed6d28ad2a32115885906f72a47",
   "identity": {
     "steam_id": "76561197970928054",
     "itad_user": "arcca"
@@ -10,27 +10,27 @@
   "sources": {
     "steam": {
       "status": "ok",
-      "fetched_at": "2026-08-03T08:41:46Z",
-      "count": 117,
+      "fetched_at": "2026-08-17T05:48:26Z",
+      "count": 120,
       "via": "steam-web-api",
       "error": null
     },
     "itad_collection": {
       "status": "ok",
-      "fetched_at": "2026-08-03T08:41:48Z",
+      "fetched_at": "2026-08-17T05:48:27Z",
       "count": 110,
       "via": "json-api",
       "error": null
     },
     "itad_waitlist": {
       "status": "ok",
-      "fetched_at": "2026-08-03T08:41:48Z",
+      "fetched_at": "2026-08-17T05:48:28Z",
       "count": 9,
       "via": "json-api",
       "error": null
     }
   },
-  "owned_count": 123,
+  "owned_count": 126,
   "waitlisted_count": 9,
   "owned": [
     {
@@ -159,6 +159,18 @@
       "sources": [
         "steam",
         "itad_collection"
+      ]
+    },
+    {
+      "title": "Beyond: Two Souls",
+      "normalized_title": "beyond two souls",
+      "steam_appid": 960990,
+      "itad_id": null,
+      "itad_slug": null,
+      "playtime_minutes": 0,
+      "added_at": null,
+      "sources": [
+        "steam"
       ]
     },
     {
@@ -520,6 +532,18 @@
       ]
     },
     {
+      "title": "Fahrenheit: Indigo Prophecy Remastered",
+      "normalized_title": "fahrenheit indigo prophecy remastered",
+      "steam_appid": 312840,
+      "itad_id": null,
+      "itad_slug": null,
+      "playtime_minutes": 0,
+      "added_at": null,
+      "sources": [
+        "steam"
+      ]
+    },
+    {
       "title": "FINAL FANTASY XIV Online",
       "normalized_title": "final fantasy xiv online",
       "steam_appid": 39210,
@@ -699,6 +723,18 @@
       "sources": [
         "steam",
         "itad_collection"
+      ]
+    },
+    {
+      "title": "Heavy Rain",
+      "normalized_title": "heavy rain",
+      "steam_appid": 960910,
+      "itad_id": null,
+      "itad_slug": null,
+      "playtime_minutes": 0,
+      "added_at": null,
+      "sources": [
+        "steam"
       ]
     },
     {
