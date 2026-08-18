@@ -1,8 +1,8 @@
 {
   "schema_version": "1.1.0",
-  "snapshot_version": 13,
-  "generated_at": "2026-08-17T05:48:28Z",
-  "content_hash": "sha256:a9c0844df93906d73167757ce5db08b2dc189ed6d28ad2a32115885906f72a47",
+  "snapshot_version": 14,
+  "generated_at": "2026-08-18T05:43:43Z",
+  "content_hash": "sha256:9e9cb23b6b9967c59a92247823ed85d09037c7195943c3c4e31395b05f53a76f",
   "identity": {
     "steam_id": "76561197970928054",
     "itad_user": "arcca"
@@ -10,21 +10,21 @@
   "sources": {
     "steam": {
       "status": "ok",
-      "fetched_at": "2026-08-17T05:48:26Z",
+      "fetched_at": "2026-08-18T05:43:41Z",
       "count": 120,
       "via": "steam-web-api",
       "error": null
     },
     "itad_collection": {
       "status": "ok",
-      "fetched_at": "2026-08-17T05:48:27Z",
-      "count": 110,
+      "fetched_at": "2026-08-18T05:43:43Z",
+      "count": 113,
       "via": "json-api",
       "error": null
     },
     "itad_waitlist": {
       "status": "ok",
-      "fetched_at": "2026-08-17T05:48:28Z",
+      "fetched_at": "2026-08-18T05:43:43Z",
       "count": 9,
       "via": "json-api",
       "error": null
@@ -165,12 +165,13 @@
       "title": "Beyond: Two Souls",
       "normalized_title": "beyond two souls",
       "steam_appid": 960990,
-      "itad_id": null,
-      "itad_slug": null,
+      "itad_id": "018d937e-f04c-70ce-b011-e610ea57d321",
+      "itad_slug": "beyond-two-souls",
       "playtime_minutes": 0,
-      "added_at": null,
+      "added_at": "2026-08-17T09:41:04Z",
       "sources": [
-        "steam"
+        "steam",
+        "itad_collection"
       ]
     },
     {
@@ -535,12 +536,13 @@
       "title": "Fahrenheit: Indigo Prophecy Remastered",
       "normalized_title": "fahrenheit indigo prophecy remastered",
       "steam_appid": 312840,
-      "itad_id": null,
-      "itad_slug": null,
+      "itad_id": "018d937e-f02b-70f6-bbc6-8bc38f8a7a73",
+      "itad_slug": "fahrenheit-indigo-prophecy-remastered",
       "playtime_minutes": 0,
-      "added_at": null,
+      "added_at": "2026-08-17T09:41:04Z",
       "sources": [
-        "steam"
+        "steam",
+        "itad_collection"
       ]
     },
     {
@@ -729,12 +731,13 @@
       "title": "Heavy Rain",
       "normalized_title": "heavy rain",
       "steam_appid": 960910,
-      "itad_id": null,
-      "itad_slug": null,
+      "itad_id": "018d937e-f99a-7194-a303-07dd8f22d0b4",
+      "itad_slug": "heavy-rain",
       "playtime_minutes": 0,
-      "added_at": null,
+      "added_at": "2026-08-17T09:41:04Z",
       "sources": [
-        "steam"
+        "steam",
+        "itad_collection"
       ]
     },
     {
