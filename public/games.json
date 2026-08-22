@@ -1,8 +1,8 @@
 {
   "schema_version": "1.1.0",
-  "snapshot_version": 14,
-  "generated_at": "2026-08-18T05:43:43Z",
-  "content_hash": "sha256:9e9cb23b6b9967c59a92247823ed85d09037c7195943c3c4e31395b05f53a76f",
+  "snapshot_version": 15,
+  "generated_at": "2026-08-22T05:40:42Z",
+  "content_hash": "sha256:b881763a7e88d9698c78ac644135dae99df191d8e67e26c996239f463485ea40",
   "identity": {
     "steam_id": "76561197970928054",
     "itad_user": "arcca"
@@ -10,21 +10,21 @@
   "sources": {
     "steam": {
       "status": "ok",
-      "fetched_at": "2026-08-18T05:43:41Z",
+      "fetched_at": "2026-08-22T05:40:40Z",
       "count": 120,
       "via": "steam-web-api",
       "error": null
     },
     "itad_collection": {
       "status": "ok",
-      "fetched_at": "2026-08-18T05:43:43Z",
+      "fetched_at": "2026-08-22T05:40:41Z",
       "count": 113,
       "via": "json-api",
       "error": null
     },
     "itad_waitlist": {
       "status": "ok",
-      "fetched_at": "2026-08-18T05:43:43Z",
+      "fetched_at": "2026-08-22T05:40:42Z",
       "count": 9,
       "via": "json-api",
       "error": null
@@ -128,7 +128,7 @@
       "steam_appid": 1086940,
       "itad_id": "018d9584-24d6-7010-b82b-df1f0b154cc7",
       "itad_slug": "baldurs-gate-3",
-      "playtime_minutes": 14069,
+      "playtime_minutes": 14077,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
         "steam",
