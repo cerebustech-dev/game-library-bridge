@@ -1,8 +1,8 @@
 {
   "schema_version": "1.1.0",
-  "snapshot_version": 17,
-  "generated_at": "2026-08-26T05:48:59Z",
-  "content_hash": "sha256:3f0fa83df52e1e9aca7897fed4d46a0aeede3aeabf705a630d31d66ef43048dc",
+  "snapshot_version": 18,
+  "generated_at": "2026-09-04T09:36:52Z",
+  "content_hash": "sha256:70ba9e9c0047aa483772532d33f501177ec3d889b9306a4f11aec9d01d6a90ee",
   "identity": {
     "steam_id": "76561197970928054",
     "itad_user": "arcca"
@@ -10,27 +10,27 @@
   "sources": {
     "steam": {
       "status": "ok",
-      "fetched_at": "2026-08-26T05:48:56Z",
-      "count": 120,
+      "fetched_at": "2026-09-04T09:36:50Z",
+      "count": 122,
       "via": "steam-web-api",
       "error": null
     },
     "itad_collection": {
       "status": "ok",
-      "fetched_at": "2026-08-26T05:48:59Z",
-      "count": 113,
+      "fetched_at": "2026-09-04T09:36:52Z",
+      "count": 115,
       "via": "json-api",
       "error": null
     },
     "itad_waitlist": {
       "status": "ok",
-      "fetched_at": "2026-08-26T05:48:59Z",
+      "fetched_at": "2026-09-04T09:36:52Z",
       "count": 9,
       "via": "json-api",
       "error": null
     }
   },
-  "owned_count": 127,
+  "owned_count": 129,
   "waitlisted_count": 9,
   "owned": [
     {
@@ -1307,6 +1307,19 @@
       ]
     },
     {
+      "title": "STAR WARS Zero Company™",
+      "normalized_title": "star wars zero company",
+      "steam_appid": 2075800,
+      "itad_id": "01964d1d-d815-72b0-b6fc-74f5633798cd",
+      "itad_slug": "star-wars-zero-company",
+      "playtime_minutes": 0,
+      "added_at": "2026-09-04T05:11:00Z",
+      "sources": [
+        "steam",
+        "itad_collection"
+      ]
+    },
+    {
       "title": "Starfield",
       "normalized_title": "starfield",
       "steam_appid": 1716740,
@@ -1593,6 +1606,19 @@
       "itad_slug": "wartales",
       "playtime_minutes": 56,
       "added_at": "2026-07-14T23:46:48Z",
+      "sources": [
+        "steam",
+        "itad_collection"
+      ]
+    },
+    {
+      "title": "What Remains of Edith Finch",
+      "normalized_title": "what remains of edith finch",
+      "steam_appid": 501300,
+      "itad_id": "018d937f-00e8-729d-a917-e2f1d5bcc95d",
+      "itad_slug": "what-remains-of-edith-finch",
+      "playtime_minutes": 0,
+      "added_at": "2026-09-04T05:11:00Z",
       "sources": [
         "steam",
         "itad_collection"
