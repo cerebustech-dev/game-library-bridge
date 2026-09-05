@@ -1,8 +1,8 @@
 {
   "schema_version": "1.1.0",
-  "snapshot_version": 18,
-  "generated_at": "2026-09-04T09:36:52Z",
-  "content_hash": "sha256:70ba9e9c0047aa483772532d33f501177ec3d889b9306a4f11aec9d01d6a90ee",
+  "snapshot_version": 19,
+  "generated_at": "2026-09-05T09:03:06Z",
+  "content_hash": "sha256:5679bfe48301012e0171cb6969f0886149d6425460ca8ef4435797ee47cc2950",
   "identity": {
     "steam_id": "76561197970928054",
     "itad_user": "arcca"
@@ -10,21 +10,21 @@
   "sources": {
     "steam": {
       "status": "ok",
-      "fetched_at": "2026-09-04T09:36:50Z",
+      "fetched_at": "2026-09-05T09:03:04Z",
       "count": 122,
       "via": "steam-web-api",
       "error": null
     },
     "itad_collection": {
       "status": "ok",
-      "fetched_at": "2026-09-04T09:36:52Z",
+      "fetched_at": "2026-09-05T09:03:06Z",
       "count": 115,
       "via": "json-api",
       "error": null
     },
     "itad_waitlist": {
       "status": "ok",
-      "fetched_at": "2026-09-04T09:36:52Z",
+      "fetched_at": "2026-09-05T09:03:06Z",
       "count": 9,
       "via": "json-api",
       "error": null
@@ -384,8 +384,8 @@
       "title": "Dispatch",
       "normalized_title": "dispatch",
       "steam_appid": 2592160,
-      "itad_id": "0193be2a-b031-72c9-aa62-fc9842adf3e4",
-      "itad_slug": "dispatch--1",
+      "itad_id": "018d937f-1eb6-7316-914d-e5d9505ed817",
+      "itad_slug": "dispatch",
       "playtime_minutes": 0,
       "added_at": "2026-07-14T23:46:48Z",
       "sources": [
