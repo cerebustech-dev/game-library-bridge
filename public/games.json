@@ -1,8 +1,8 @@
 {
   "schema_version": "1.1.0",
-  "snapshot_version": 20,
-  "generated_at": "2026-09-07T10:15:11Z",
-  "content_hash": "sha256:dc2873bcdac6bc4319d62468c215bff234d04c9ba72fd14adedaad9211d6bdbd",
+  "snapshot_version": 21,
+  "generated_at": "2026-09-12T09:19:11Z",
+  "content_hash": "sha256:d5437a191afa7080b20fb1db26895dc3790f3edb96aa2752a8d8c363195f1483",
   "identity": {
     "steam_id": "76561197970928054",
     "itad_user": "arcca"
@@ -10,21 +10,21 @@
   "sources": {
     "steam": {
       "status": "ok",
-      "fetched_at": "2026-09-07T10:15:09Z",
+      "fetched_at": "2026-09-12T09:19:09Z",
       "count": 122,
       "via": "steam-web-api",
       "error": null
     },
     "itad_collection": {
       "status": "ok",
-      "fetched_at": "2026-09-07T10:15:11Z",
+      "fetched_at": "2026-09-12T09:19:11Z",
       "count": 115,
       "via": "json-api",
       "error": null
     },
     "itad_waitlist": {
       "status": "ok",
-      "fetched_at": "2026-09-07T10:15:11Z",
+      "fetched_at": "2026-09-12T09:19:11Z",
       "count": 9,
       "via": "json-api",
       "error": null
@@ -1312,7 +1312,7 @@
       "steam_appid": 2075800,
       "itad_id": "01964d1d-d815-72b0-b6fc-74f5633798cd",
       "itad_slug": "star-wars-zero-company",
-      "playtime_minutes": 409,
+      "playtime_minutes": 471,
       "added_at": "2026-09-04T05:11:00Z",
       "sources": [
         "steam",
