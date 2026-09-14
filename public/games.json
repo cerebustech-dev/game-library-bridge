@@ -1,8 +1,8 @@
 {
   "schema_version": "1.1.0",
-  "snapshot_version": 21,
-  "generated_at": "2026-09-12T09:19:11Z",
-  "content_hash": "sha256:d5437a191afa7080b20fb1db26895dc3790f3edb96aa2752a8d8c363195f1483",
+  "snapshot_version": 22,
+  "generated_at": "2026-09-14T05:26:48Z",
+  "content_hash": "sha256:e766eae489f85f2509a7e734fb1b623d3b5ccc8b60b85e5fef49b53d42e4849b",
   "identity": {
     "steam_id": "76561197970928054",
     "itad_user": "arcca"
@@ -10,27 +10,27 @@
   "sources": {
     "steam": {
       "status": "ok",
-      "fetched_at": "2026-09-12T09:19:09Z",
-      "count": 122,
+      "fetched_at": "2026-09-14T05:26:46Z",
+      "count": 123,
       "via": "steam-web-api",
       "error": null
     },
     "itad_collection": {
       "status": "ok",
-      "fetched_at": "2026-09-12T09:19:11Z",
+      "fetched_at": "2026-09-14T05:26:48Z",
       "count": 115,
       "via": "json-api",
       "error": null
     },
     "itad_waitlist": {
       "status": "ok",
-      "fetched_at": "2026-09-12T09:19:11Z",
+      "fetched_at": "2026-09-14T05:26:48Z",
       "count": 9,
       "via": "json-api",
       "error": null
     }
   },
-  "owned_count": 129,
+  "owned_count": 130,
   "waitlisted_count": 9,
   "owned": [
     {
@@ -634,6 +634,18 @@
       "sources": [
         "steam",
         "itad_collection"
+      ]
+    },
+    {
+      "title": "Guild Wars 2®",
+      "normalized_title": "guild wars 2",
+      "steam_appid": 1284210,
+      "itad_id": null,
+      "itad_slug": null,
+      "playtime_minutes": 28,
+      "added_at": null,
+      "sources": [
+        "steam"
       ]
     },
     {
@@ -1312,7 +1324,7 @@
       "steam_appid": 2075800,
       "itad_id": "01964d1d-d815-72b0-b6fc-74f5633798cd",
       "itad_slug": "star-wars-zero-company",
-      "playtime_minutes": 471,
+      "playtime_minutes": 502,
       "added_at": "2026-09-04T05:11:00Z",
       "sources": [
         "steam",
